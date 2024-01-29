@@ -1,7 +1,7 @@
 from lex import *
 
 def main():
-    source = "F+-123 foo*THEN/"
+    source = "testVar = \"My string\""
     lexer = Lexer(source)
 
     token = lexer.getToken()        

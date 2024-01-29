@@ -107,7 +107,7 @@ class Lexer:
                 self.abort("Expected !=, got !" + self.peek())
         elif self.curChar == '\"':
             self.nextChar()
-            startPos = self.startPos
+            startPos = self.curPos
             while self.curChar != '\"':
                 if self.curChar == '\r' or self.curChar == '\n' or self.curChar == '\t' or self.curChar == '\\' or self.curChar == '%':
                     self.abort("Illegal charc in string.")
